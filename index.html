@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Predikat Nilai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Cek Predikat Nilai</h1>
+      <p class="deskripsi">
+        Program sederhana untuk mengecek predikat nilai menggunakan
+        perulangan (for) dan percabangan (if-else) pada JavaScript.
+      </p>
+      <dl class="data-diri">
+        <dt>Nama</dt><dd>Sandy Viandhito</dd>
+        <dt>NIM</dt><dd>25533974</dd>
+        <dt>Program Studi</dt><dd>Teknik Informatika</dd>
+      </dl>
+    </header>
+
+    <section class="panel">
+      <label for="inputNilai">Masukkan nilai (pisahkan dengan koma)</label>
+      <input type="text" id="inputNilai" placeholder="Contoh: 90, 78, 65, 52, 30, 105, abc">
+      <div class="tombol">
+        <button id="btnCek" type="button">Cek Predikat</button>
+        <button id="btnReset" type="button" class="sekunder">Reset</button>
+      </div>
+      <p id="pesan" class="pesan" role="alert"></p>
+    </section>
+
+    <section class="panel" id="areaHasil" hidden>
+      <h2>Hasil</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Input</th>
+            <th>Predikat</th>
+          </tr>
+        </thead>
+        <tbody id="isiHasil"></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Aturan Predikat</h2>
+      <ul class="aturan">
+        <li><span>90 - 100</span><strong>A</strong></li>
+        <li><span>75 - 89</span><strong>B</strong></li>
+        <li><span>60 - 74</span><strong>C</strong></li>
+        <li><span>50 - 59</span><strong>D</strong></li>
+        <li><span>&lt; 50</span><strong>E</strong></li>
+        <li><span>Di luar 0 - 100 / bukan angka</span><strong>Tidak valid</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
